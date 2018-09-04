@@ -1,4 +1,70 @@
+body {
+    height: 100%;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+  .flex-container {
+    display: flex;
+  }
+
+
+
+  h1 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+  }
+
+  h4, p {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  img {
+
+  }
 @media only screen and (max-width: 500px) {
+  ul {
+    display: none;
+  }
+
+  /* made the images stack */
+  .flex-container {
+    display: block;
+  }
+
+
+  h1 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+  }
 
   .menu {
     width: 35px;
@@ -7,4 +73,8 @@
     margin: 6px 0;
   }
 
+  h4, p {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+  }
 }
